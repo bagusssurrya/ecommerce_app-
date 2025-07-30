@@ -37,7 +37,7 @@ const UserModel = {
         return result.affectedRows;
     },
 
-    // Menghapus pengguna
+
     delete: async (id) => {
         const [result] = await pool.execute(
             'DELETE FROM users WHERE id = ?',
